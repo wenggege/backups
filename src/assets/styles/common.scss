@@ -1,0 +1,178 @@
+@import "variables";
+
+#app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-pack-center {
+  justify-content: center;
+}
+
+.flex-pack-justify {
+  justify-content: space-between;
+}
+
+.flex-justify-end {
+  justify-content: flex-end;
+}
+
+.flex-justify-start {
+  justify-content: flex-start;
+}
+
+.f-direction-row {
+  flex-direction: row;
+}
+
+.f-direction-column {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.common-title__main {
+  color: #303133;
+  padding: 24px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.text-title {
+  color: #303133;
+}
+
+.text-nomal {
+  color: #606266;
+}
+
+.text-sub {
+  color: #909399;
+}
+
+.text-placeholder {
+  color: #C0C4CC;
+}
+
+.text-success {
+  color: #3BC602 !important
+}
+
+.text-warning {
+  color: #E6A23C !important
+}
+
+.text-error {
+  color: #FF6555 !important
+}
+
+.text-message {
+  color: #8F939A !important
+}
+
+.bg-success {
+  background-color: #3BC602 !important
+}
+
+.bg-warning {
+  background-color: #E6A23C !important
+}
+
+.bg-error {
+  background-color: #FF6555 !important
+}
+
+.bg-message {
+  background-color: #8F939A !important
+}
+
+.border-lv1 {
+  border: 1px solid #C6CAD1 !important;
+}
+
+.border-lv2 {
+  border: 1px solid #DCDFE6 !important;
+}
+
+.border-lv3 {
+  border: 1px solid #EBEEF5 !important;
+}
+
+.border-lv4 {
+  border: 1px solid #F2F6FC !important;
+}
+
+.line_2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.ellipsis {
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.field-title {
+  clear: both;
+  height: 36px;
+  margin-bottom: 16px;
+  padding: 0 10px;
+  background: linear-gradient(to left, rgba(251, 251, 251, 0) 0%, $colorBG 100%);
+  font-size: 12px;
+  line-height: 36px;
+  color: #333;
+
+  &.center {
+    background: linear-gradient(to left, rgba(251, 251, 251, 0) 0%, $colorBG 50%, rgba(251, 251, 251, 0) 100%,);
+    text-align: center;
+  }
+
+  &.right {
+    background: linear-gradient(to right, rgba(251, 251, 251, 0) 0%, $colorBG 100%);
+    text-align: right;
+  }
+
+  .svg-icon,
+  .icon {
+    width: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+
+  .name {
+    font-weight: bold;
+  }
+}

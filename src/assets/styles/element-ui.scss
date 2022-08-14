@@ -1,0 +1,266 @@
+@import "variables.scss";
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-radio__input.is-disabled + span.el-radio__label {
+  color: #8a8a8a;
+}
+
+// el-form
+.el-form {
+  &--label-right {
+    .el-form-item__label {
+      justify-content: flex-end;
+    }
+  }
+
+  &-item__label {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+    line-height: 18px !important;
+  }
+
+  &-item--small {
+    .el-form-item__label {
+      min-height: 32px;
+    }
+  }
+
+  .el-input-number,
+  .el-date-editor.el-input,
+  .el-date-editor.el-input__inner,
+  .el-select {
+    width: 100%;
+  }
+
+  .el-textarea .el-input__count {
+    line-height: 1;
+  }
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+//table
+.el-table {
+  thead {
+    color: #323232;
+  }
+
+  th {
+    background: #FAFAFA;
+    padding: 10px 0;
+
+    &.is-sortable {
+      padding: 3px 0;
+    }
+
+    &.el-table__cell {
+      background: #FAFAFA;
+    }
+  }
+
+  td {
+    padding: 10px 0;
+  }
+
+  .cell {
+    line-height: 1.4;
+  }
+
+  .el-table__row--level-0 {
+    .el-table__cell:first-child .cell {
+      padding-left: 5px;
+    }
+  }
+
+  .el-table__row--level-1 {
+    background-color: lighten($colorPrimary, 38%);
+  }
+
+  [class*=el-table__row--level] .el-table__expand-icon {
+    font-size: 14px;
+  }
+}
+
+//dialog
+.el-dialog {
+  border-radius: 0;
+
+  &__header {
+    margin-left: 20px;
+    padding: 20px 20px 16px 0;
+    border-bottom: 1px solid $colorBorder;
+  }
+
+  &__title {
+    position: relative;
+    height: 22px;
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:before {
+      content: '';
+      width: 4px;
+      height: 20px;
+      background: $colorPrimary;
+      display: inline-block;
+      position: absolute;
+      top: 1px;
+      left: 0;
+    }
+  }
+
+  &__body {
+    padding: 16px 20px;
+  }
+
+  &--center .el-dialog__body {
+    padding: 15px 20px;
+  }
+
+  &__footer {
+    padding: 0 20px 20px;
+    text-align: center;
+
+    .el-button {
+      min-width: 84px;
+      margin: 0 30px;
+      padding: 10px 20px;
+    }
+  }
+
+  &__headerbtn {
+    right: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .3s ease;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+//el-message
+.el-message {
+  &-box {
+    width: 300px;
+    border-radius: 0;
+    border: none;
+    padding-bottom: 20px;
+
+    &.prompt {
+      width: 400px;
+
+      .el-message-box__btns {
+        .el-button {
+          padding: 12px 20px;
+          font-size: 14px;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    //&--center {
+    //  padding-bottom: 20px;
+    //}
+
+    &__header {
+      padding: 16px 20px 10px;
+    }
+
+    &__content {
+      padding: 10px 20px;
+    }
+
+    &__btns {
+      padding-top: 15px;
+      text-align: center;
+
+      .el-button {
+        margin: 0 15px !important;
+      }
+    }
+  }
+}
+
+//el-tabs
+.el-tabs--card {
+  > .el-tabs__header {
+    margin: 0;
+    border: none;
+    background: $colorBG;
+
+    .el-tabs__nav {
+      border: none;
+    }
+
+    .el-tabs__item {
+      margin-right: 32px;
+      border: none;
+      border-radius: 4px 4px 0 0;
+      background-color: #fff;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.is-active {
+        background: #DFE6FF;
+      }
+    }
+  }
+
+  > .el-tabs__content {
+    padding: 16px;
+  }
+
+  &.full {
+    height: 100%;
+
+    > .el-tabs__content {
+      padding: 16px 0;
+      height: calc(100% - 40px);
+    }
+
+    .el-tab-pane {
+      height: 100%;
+    }
+  }
+}
+
+// el-upload
+.el-upload--picture-card {
+  width: 100px;
+  height: 100px;
+  padding-top: 30px;
+  //line-height: 98px;
+  line-height: 1;
+  color: $colorPrimary;
+
+  i {
+    font-size: 20px;
+    color: $colorPrimary;
+  }
+
+  p {
+    margin: 6px 0 0;
+  }
+}
+
+.el-upload-list--picture-card {
+  .el-upload-list__item {
+    width: 100px;
+    height: 100px;
+  }
+}
